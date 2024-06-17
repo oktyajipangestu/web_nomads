@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Travel extends Model
 {
-    protected $table = "travels";
+    protected $table = "travel";
+
+    protected $fillable = [
+        'name', 'slug', 'country', 'address', 'description', 'thumbnail'
+    ];
 }

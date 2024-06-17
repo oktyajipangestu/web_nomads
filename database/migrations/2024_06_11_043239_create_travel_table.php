@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('travel', function (Blueprint $table) {
             $table->id();
             $table->string("name", 100)->nullable(false);
+            $table->string("slug")->nullable();
             $table->string("country", 50)->nullable();
             $table->string("address")->nullable();
             $table->text("description")->nullable();
